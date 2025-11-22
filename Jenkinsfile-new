@@ -52,7 +52,7 @@ pipeline {
                     trivy image \
                         --severity CRITICAL,HIGH \
                         --cache-dir /var/lib/trivy \
-                        staticSite
+                        static-site
                 '''
             }
             post {
